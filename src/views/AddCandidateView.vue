@@ -143,7 +143,7 @@
         />
         <div v-if="hasError('sscPassingYear')" class="invalid-feedback">
           <div class="error" v-if="!$v.formData.sscPassingYear.required">
-            Please Enter your SSC Passing year.
+            <!-- Please Enter your SSC Passing year. -->
           </div>
           <div class="error" v-if="!$v.formData.sscPassingYear.numeric">
             Should be a valid value.
@@ -163,9 +163,9 @@
           v-model="formData.hscPassingYear"
         />
         <div v-if="hasError('hscPassingYear')" class="invalid-feedback">
-          <div class="error" v-if="!$v.formData.hscPassingYear.required">
+          <!-- <div class="error" v-if="!$v.formData.hscPassingYear.required">
             Please Enter your HSC Passing year.
-          </div>
+          </div> -->
           <div class="error" v-if="!$v.formData.hscPassingYear.numeric">
             Should be a valid value.
           </div>
@@ -184,9 +184,9 @@
           v-model="formData.universityPassingYear"
         />
         <div v-if="hasError('universityPassingYear')" class="invalid-feedback">
-          <div class="error" v-if="!$v.formData.universityPassingYear.required">
+          <!-- <div class="error" v-if="!$v.formData.universityPassingYear.required">
             Please Enter your University Passing year.
-          </div>
+          </div> -->
           <div class="error" v-if="!$v.formData.universityPassingYear.numeric">
             Should be a valid value.
           </div>
@@ -206,9 +206,9 @@
           v-model="formData.nidNo"
         />
         <div v-if="hasError('nidNo')" class="invalid-feedback">
-          <div class="error" v-if="!$v.formData.nidNo.required">
+          <!-- <div class="error" v-if="!$v.formData.nidNo.required">
             Please Enter your National Id Number.
-          </div>
+          </div> -->
           <div class="error" v-if="!$v.formData.nidNo.numeric">
             Should be a valid value.
           </div>
@@ -227,9 +227,9 @@
           v-model="formData.birthCertificateNo"
         />
         <div v-if="hasError('birthCertificateNo')" class="invalid-feedback">
-          <div class="error" v-if="!$v.formData.birthCertificateNo.required">
+          <!-- <div class="error" v-if="!$v.formData.birthCertificateNo.required">
             Please Enter your Birth Certificate Number.
-          </div>
+          </div> -->
           <div class="error" v-if="!$v.formData.birthCertificateNo.numeric">
             Should be a valid value.
           </div>
@@ -363,10 +363,10 @@ export default {
         // terms: false,
       },
       validationRules: [
-        { name: {  }, email: { email}, phone:{} }, //required, numeric
-        {  sscPassingYear:{required, numeric},hscPassingYear:{required, numeric}, universityPassingYear:{required, numeric}, nidNo:{required, numeric},
+        { name: { required }, email: { required, email}, phone:{required, numeric} }, //required, numeric
+        {  sscPassingYear:{ numeric},hscPassingYear:{ numeric}, universityPassingYear:{ numeric}, nidNo:{numeric},
         birthCertificateNo:{ numeric}, 
-        fatherName:{required}, motherName:{required}, birthDate:{required},  }, //numberOfEmployees: { required, numeric }
+        fatherName:{}, motherName:{}, birthDate:{required},  }, //numberOfEmployees: { required, numeric }
         { experienceYear:{required, numeric} },
       ],
     };
