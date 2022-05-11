@@ -1,5 +1,8 @@
 
 <template>
+<div>
+   <h3>Welcome</h3>
+   <h5>Please enter your information to continue</h5>
   <form-wizard @onComplete="onComplete">
     <tab-content title="About You" :selected="true">
       
@@ -320,6 +323,7 @@
 
     </tab-content>
   </form-wizard>
+  </div>
 </template>
 
 <script>

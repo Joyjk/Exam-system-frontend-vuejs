@@ -56,7 +56,7 @@ export default {
                     this.count++;
                 }
             }
-            console.log(this.form)
+            //console.log(this.form)
             // if(this.count==0){
             //      Vue.axios.post('https://localhost:44332/api/Users', this.form).then((res)=>{
             //         console.log(res)
@@ -65,10 +65,10 @@ export default {
 
 
 
-            //console.log(this.form)
-            // Vue.axios.post('https://localhost:44332/api/Users', this.form).then((res)=>{
-            //     console.log(res)
-            // })
+            console.log(this.form)
+            Vue.axios.post('https://localhost:44332/api/Users', this.form).then((res)=>{
+                console.log(res)
+            })
         }
     }
 }
