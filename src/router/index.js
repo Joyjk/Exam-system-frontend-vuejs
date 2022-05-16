@@ -6,6 +6,8 @@ import AddNewUser from '../views/AddNewUserView.vue'
 import AddCandidate from '../views/CandidateView/AddCandidateView.vue'
 import AddCandidateShortView from '../views/CandidateView/AddCandidateShortView.vue'
 import StartPageView from '../views/CandidateView/StartPageView.vue'
+import QuestionType1 from '../views/Question/QuestionType1.vue'
+import QuestionType2 from '../views/Question/QuestionType2.vue'
 
 Vue.use(VueRouter)
 
@@ -47,8 +49,29 @@ const routes = [
     path: '/secondpage',
     name:'secondpage',
     component:StartPageView
+  },
+  {
+    path: '/questiontype1',
+    name:'QuestionType1',
+    component:QuestionType1
+  },
+  {
+    path: '/questiontype2',
+    name:'QuestionType2',
+    component:QuestionType2
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
 
 const router = new VueRouter({
   mode: 'history',

@@ -7,7 +7,9 @@
       <router-link to="/addnewuser">New User</router-link> |
       <router-link to="/addcandidate">New Candidate</router-link> |
       <router-link to="/addcandidate2">New short Candidate</router-link> |
-      <router-link to="/secondpage">Second Page</router-link>
+      <router-link to="/secondpage">Second Page</router-link> |
+      <router-link to="/questiontype1">Question type 1</router-link> |
+      <router-link to="/questiontype2">Question type 2</router-link>
     </nav>
     <router-view/>
   </div>

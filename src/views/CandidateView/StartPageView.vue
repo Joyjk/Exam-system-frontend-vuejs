@@ -23,7 +23,7 @@ export default {
     margin-left: 10%;
     margin-right: 10%;
     border: 2px solid black;
-    border-radius: 5%;
+    border-radius: 7rem;
 }
 .startbtn{
     margin-top: 2%;
