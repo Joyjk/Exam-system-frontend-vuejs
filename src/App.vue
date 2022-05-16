@@ -5,7 +5,9 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/page2">Page 2</router-link> |
       <router-link to="/addnewuser">New User</router-link> |
-      <router-link to="/addcandidate">New Candidate</router-link>
+      <router-link to="/addcandidate">New Candidate</router-link> |
+      <router-link to="/addcandidate2">New short Candidate</router-link> |
+      <router-link to="/secondpage">Second Page</router-link>
     </nav>
     <router-view/>
   </div>

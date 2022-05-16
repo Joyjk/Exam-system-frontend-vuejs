@@ -17,7 +17,7 @@
        
             <!-- <button type="submit" class="btn btn-dark">Add</button> -->
             <div class="d-grid gap-2" style="margin-top:1%">
-                <button class="btn btn-dark" type="submit">Add</button>
+                <button class="btn btn-dark" type="submit">Sign up</button>
             </div>
       </form>
       </div>

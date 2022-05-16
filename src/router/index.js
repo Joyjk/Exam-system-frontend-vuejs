@@ -3,7 +3,9 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Page2View from '../views/Page2View.vue'
 import AddNewUser from '../views/AddNewUserView.vue'
-import AddCandidate from '../views/AddCandidateView.vue'
+import AddCandidate from '../views/CandidateView/AddCandidateView.vue'
+import AddCandidateShortView from '../views/CandidateView/AddCandidateShortView.vue'
+import StartPageView from '../views/CandidateView/StartPageView.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +37,16 @@ const routes = [
     path: '/addcandidate',
     name:'newcandidate',
     component:AddCandidate
+  },
+  {
+    path: '/addcandidate2',
+    name:'newcandidate2',
+    component:AddCandidateShortView
+  },
+  {
+    path: '/secondpage',
+    name:'secondpage',
+    component:StartPageView
   }
 ]
 
