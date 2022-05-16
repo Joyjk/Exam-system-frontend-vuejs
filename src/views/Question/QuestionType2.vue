@@ -12,6 +12,7 @@
         </div>
       <h4 class="question">
        Q2: For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device.?
+       For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device.?For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device.?
       </h4>
     </div>
     <div class="ansButton">
@@ -37,7 +38,11 @@
         element is affected by our utilities.
         </button> -->
 
-        <textarea > </textarea>
+        <textarea rows="13" cols="120"> </textarea>
+    
+    </div>
+    <div class="d-grid gap-2" style="margin-left:22%; margin-right:22%">
+        <button class="btn btn-primary" type="button">Submit</button>
         
     </div>
   </div>
@@ -45,30 +50,36 @@
 <script>
 export default {};
 </script>
-<style >
+<style scoped>
 .question{
-    padding: 3%;
+    padding: 1%;
     background-color: rgb(191, 191, 196);
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 5rem;
 }
 .time-left{
-    padding: 1%;
+    padding: 0.5%;
     background-color: rgb(131, 23, 23);
     color: aliceblue;
     width: 10%;
-    margin-left: 40%;
+    margin-left: 30%;
     display: inline-block;
     border-radius: 3em;
+    position: absolute;
 }
 .time-left div{
     /* display: inline-block; */
+    width: 80%;
+    margin-left: 10%;
     background-color: rgb(146, 226, 126);
     color: rgb(0, 0, 0);
 }
 .heading-text{
     text-decoration: black;
+     position: relative;
+    z-index: 9;
+    background-color: rgb(197, 22, 22);
 }
 .ans1{
     padding: 1%;
@@ -80,6 +91,6 @@ export default {};
 }
 .ansButton button{
     margin: 1%;
-    
+    width: 40%;
 }
 </style>

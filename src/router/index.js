@@ -5,9 +5,10 @@ import Page2View from '../views/Page2View.vue'
 import AddNewUser from '../views/AddNewUserView.vue'
 import AddCandidate from '../views/CandidateView/AddCandidateView.vue'
 import AddCandidateShortView from '../views/CandidateView/AddCandidateShortView.vue'
-import StartPageView from '../views/CandidateView/StartPageView.vue'
+import StartPageView from '../views/CandidateView/SecondPageView.vue'
 import QuestionType1 from '../views/Question/QuestionType1.vue'
 import QuestionType2 from '../views/Question/QuestionType2.vue'
+import QuestionType3 from '../views/Question/QuestionType3.vue'
 
 Vue.use(VueRouter)
 
@@ -59,7 +60,12 @@ const routes = [
     path: '/questiontype2',
     name:'QuestionType2',
     component:QuestionType2
-  }
+  },
+  {
+    path: '/questiontype3',
+    name:'QuestionType3',
+    component:QuestionType3
+  },
 ]
 
 

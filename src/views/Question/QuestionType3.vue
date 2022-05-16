@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="">
-        <h3>This is Question type 1</h3>
+        <h3>This is Question type 3</h3>
         <span class="heading-text">Please ans this question</span>
         <div class="time-left">
             <h4>Time-Left: </h4>
@@ -11,10 +11,11 @@
             </div>
         </div>
       <h4 class="question">
-       Q1: This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities. Classes are applied to the element
-        itself or sometimes the parent element?
+       Q3: For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device.?
       </h4>
+    </div>
+    <div>
+        <img src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" height="500" alt="">
     </div>
     <div class="ansButton">
         <button class="btn btn-primary">
@@ -32,21 +33,25 @@
         </button>
         <button class="btn btn-primary">
             d)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.
         </button>
         <button class="btn btn-primary">
             e)This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.
         </button>
+
         
+    
     </div>
+    <!-- <div class="d-grid gap-2" style="margin-left:22%; margin-right:22%">
+        <button class="btn btn-primary" type="button">Submit</button>
+        
+    </div> -->
   </div>
 </template>
 <script>
 export default {};
 </script>
-
 <style scoped>
 .question{
     padding: 1%;
@@ -67,17 +72,18 @@ export default {};
 }
 .time-left div{
     /* display: inline-block; */
-     width: 80%;
-       
+    width: 80%;
+    
     margin-left: 10%;
     background-color: rgb(146, 226, 126);
     color: rgb(0, 0, 0);
 }
 .heading-text{
     text-decoration: black;
-     position: relative;
+    position: relative;
     z-index: 9;
     background-color: rgb(197, 22, 22);
+    /* margin-left: 100px; */
 }
 .ans1{
     padding: 1%;
@@ -87,12 +93,8 @@ export default {};
     border-radius: 5rem;
     color: azure;
 }
-.ansButton{
-    margin-top: 3%;
-}
 .ansButton button{
     margin: 1%;
     width: 40%;
-    
 }
 </style>
