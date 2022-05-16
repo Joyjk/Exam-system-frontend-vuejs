@@ -15,7 +15,7 @@
       </h4>
     </div>
     <div>
-        <img src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" height="500" alt="">
+        <img src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" height="400" alt="">
     </div>
     <div class="ansButton">
         <button class="btn btn-primary">

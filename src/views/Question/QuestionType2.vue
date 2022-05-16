@@ -38,7 +38,7 @@
         element is affected by our utilities.
         </button> -->
 
-        <textarea rows="13" cols="120"> </textarea>
+        <textarea rows="13" cols="80"> </textarea>
     
     </div>
     <div class="d-grid gap-2" style="margin-left:22%; margin-right:22%">
@@ -56,7 +56,8 @@ export default {};
     background-color: rgb(191, 191, 196);
     margin-left: 15%;
     margin-right: 15%;
-    border-radius: 5rem;
+    border-radius: 2rem;
+    max-width: 100%;
 }
 .time-left{
     padding: 0.5%;

@@ -17,10 +17,13 @@
       </h4>
     </div>
     <div class="ansButton">
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" type="radio">
             a)This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.
         </button>
+
+        <input type="radio" class="btn btn-primary" value="a)This is a long paragraph written to show how the line-height of an
+        element is affected by our utilities.">
         
         <button class="btn btn-primary">
             b)This is a long paragraph written to show how the line-height of an
@@ -51,9 +54,10 @@ export default {};
 .question{
     padding: 1%;
     background-color: rgb(191, 191, 196);
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 15%;
-    border-radius: 5rem;
+    border-radius: 2rem;
+    width: 85%;
 }
 .time-left{
     padding: 0.5%;

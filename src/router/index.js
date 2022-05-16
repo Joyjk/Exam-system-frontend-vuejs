@@ -9,6 +9,7 @@ import StartPageView from '../views/CandidateView/SecondPageView.vue'
 import QuestionType1 from '../views/Question/QuestionType1.vue'
 import QuestionType2 from '../views/Question/QuestionType2.vue'
 import QuestionType3 from '../views/Question/QuestionType3.vue'
+import QuestionType4 from '../views/Question/QuestionType4.vue'
 
 Vue.use(VueRouter)
 
@@ -65,6 +66,11 @@ const routes = [
     path: '/questiontype3',
     name:'QuestionType3',
     component:QuestionType3
+  },
+  {
+    path: '/questiontype4',
+    name:'QuestionType4',
+    component:QuestionType4
   },
 ]
 
