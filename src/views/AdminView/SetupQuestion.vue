@@ -14,7 +14,7 @@
             
             <div class="mb-3">
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
                 <label class="btn btn-outline-primary" for="btnradio1">Written</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
