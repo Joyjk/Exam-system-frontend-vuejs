@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="">
-        <h3>This is Question type 2</h3>
-        <span class="heading-text">Please ans this question</span>
+        <!-- <h3>This is Question type 2</h3>
+        <span class="heading-text">Please ans this question</span> -->
         <div class="time-left">
             <h4>Time-Left: </h4>
             <h4>28.28</h4>
@@ -53,7 +53,7 @@ export default {};
 <style scoped>
 .question{
     padding: 1%;
-    background-color: rgb(191, 191, 196);
+    background-color: rgb(116, 116, 121);
     margin-left: 15%;
     margin-right: 15%;
     border-radius: 2rem;

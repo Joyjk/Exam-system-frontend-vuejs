@@ -6,10 +6,22 @@
                 <label for="exampleFormControlInput1" class="form-label">Enter Question</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-
+            
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Enter Question Picture Attachment</label>
                 <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            
+            <div class="mb-3">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Written</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">MCQ</label>
+
+                
+                </div>
             </div>
             
             <div class="mb-3">

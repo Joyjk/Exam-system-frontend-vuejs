@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h2>View Result</h2>
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <select class="form-select form-select-lg mb-3" style="text-align:center" aria-label=".form-select-lg example">
                     <option selected>Select Candidate type</option>
                     <option value="1">Sr. Accounts</option>
                     <option value="2">Accounts</option>

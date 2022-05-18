@@ -2,7 +2,7 @@
     <div>
         <div class="container">
             <h2>Assign Questions before exam</h2>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <select class="form-select form-select-lg mb-3" style="text-align:center" aria-label=".form-select-lg example">
                     <option selected>Select Candidate type</option>
                     <option value="1">Sr. Accounts</option>
                     <option value="2">Accounts</option>
@@ -10,6 +10,12 @@
                     <option value="3">Hr Admin</option>
                     <option value="3">Manager</option>
                     
+            </select>
+            <select class="form-select form-select-lg mb-3" style="text-align:center" aria-label=".form-select-lg example">
+            <option selected>Select Candidate Session</option>
+            <option value="1">April-Jr.Developer</option>
+            <option value="2">January-Developer</option>
+            <option value="3">August-FrontEnd-Developer</option>
             </select>
             <div class="row">
                 <div class="table-responsive col-md-6">
@@ -95,12 +101,13 @@
                 </div>
                 
                 <div class="table-responsive col-md-6">
-                    <table  class="table table-success table-striped">
+                    <table  class="table ">
                         <tr>
                             <th>Set</th>
                             <th>Questions</th>
                         </tr>
-                        <tr>
+                        <tbody>
+                            <tr>
                             <td>Alpha</td>
                             <td>
                                  <button class="btn btn-primary" type="button">View</button>
@@ -118,6 +125,7 @@
                                  <button class="btn btn-primary" type="button">View</button>
                             </td>
                         </tr>
+                        </tbody>
                         
                     </table>
                 </div>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="">
-        <h3>This is Question type 1</h3>
-        <span class="heading-text">Please ans this question</span>
+        <!-- <h3>This is Question type 1</h3>
+        <span class="heading-text">Please ans this question</span> -->
         <div class="time-left">
             <h4>Time-Left: </h4>
             <h4>30</h4>
@@ -17,7 +17,7 @@
       </h4>
     </div>
     <div class="ansButton">
-        <button class="btn btn-primary" type="radio">
+        <!-- <button class="btn btn-primary" type="radio">
             a)This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.
         </button>
@@ -28,8 +28,33 @@
         <button class="btn btn-primary">
             b)This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.
-        </button>
-        <button class="btn btn-primary">
+        </button> -->
+            
+         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio1">a)This is a long paragraph written to show how the line-height of an
+        element is affected by our utilities.</label>
+
+       
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio2">b)This is a long paragraph written to show how the line-height of an
+        element is affected by our utilities.</label>
+
+        
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio3">c)This is a long paragraph written to show how the line-height of an
+        element is affected by our utilities.</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio4">d)This is a long paragraph written to show how the line-height of an
+        element is affected by our utilities.</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio5">e)This is a long paragraph written to show how the line-height of an
+        element is affected by our utilities.</label>
+
+        <!-- <button class="btn btn-primary">
             c)This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.
         </button>
@@ -41,7 +66,7 @@
         <button class="btn btn-primary">
             e)This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.
-        </button>
+        </button> -->
         
     </div>
   </div>
@@ -51,9 +76,12 @@ export default {};
 </script>
 
 <style scoped>
+.btn{
+    margin-top: 6px;
+}
 .question{
     padding: 1%;
-    background-color: rgb(191, 191, 196);
+    background-color: rgb(116, 116, 121);
     margin-left: 10%;
     margin-right: 15%;
     border-radius: 2rem;
@@ -94,9 +122,9 @@ export default {};
 .ansButton{
     margin-top: 3%;
 }
-.ansButton button{
-    margin: 1%;
-    width: 40%;
+.ansButton input label{
+    /* margin: 1%;
+    width: 40%; */
     
 }
 </style>

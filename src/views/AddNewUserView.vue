@@ -66,10 +66,15 @@ export default {
 
 
             console.log(this.form)
-            Vue.axios.post('https://localhost:44332/api/Users', this.form).then((res)=>{
-                console.log(res)
-            })
+            // Vue.axios.post('https://localhost:44332/api/Users', this.form).then((res)=>{
+            //     console.log(res)
+            // })
         }
     }
 }
 </script>
+<style scoped>
+input{
+    margin-top: 3%;
+}
+</style>

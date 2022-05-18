@@ -12,14 +12,17 @@
                 <td>AAA</td>
                 <td>Sr.Engineer</td>
                 <td>
-                    <button type="button">View exam Paper</button>
+                    <!-- <button type="button" :to="/viewexam">View exam Paper</button> -->
+                    <router-link to='/viewexam' type="button">View exam Paper</router-link>
                 </td>
             </tr>
             <tr>
                 <td>BBB</td>
                 <td>Sr.Engineer</td>
                 <td>
-                    <button type="button">View exam Paper</button>
+
+                    <!-- <button type="button">View exam Paper</button> -->
+                    <router-link to='/viewexam' type="button">View exam Paper</router-link>
                 </td>
             </tr>
         </table>
