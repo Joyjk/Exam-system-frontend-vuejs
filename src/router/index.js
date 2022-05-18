@@ -10,6 +10,14 @@ import QuestionType1 from '../views/Question/QuestionType1.vue'
 import QuestionType2 from '../views/Question/QuestionType2.vue'
 import QuestionType3 from '../views/Question/QuestionType3.vue'
 import QuestionType4 from '../views/Question/QuestionType4.vue'
+import Login  from '../views/AdminView/LoginView.vue'
+import HrSetupCandicateView from '../views/AdminView/HrSetupCandicateView.vue'
+import SetupQuestion from '../views/AdminView/SetupQuestion.vue'
+import QuestionSetMapping from '../views/AdminView/QuestionSetMapping.vue'
+import SetupQustionForCandidates from '../views/AdminView/SetupQustionForCandidates.vue'
+import ViewExamPaperList from '../views/AdminView/ViewExamPaperList.vue'
+import ViewExamPaper from '../views/AdminView/ViewExamPaper.vue'
+import ResultSheet from '../views/AdminView/ResultSheet.vue'
 
 Vue.use(VueRouter)
 
@@ -72,6 +80,47 @@ const routes = [
     name:'QuestionType4',
     component:QuestionType4
   },
+  {
+    path: '/login',
+    name:'Login',
+    component:Login
+  },
+  {
+    path: '/hrsetupcandidate',
+    name:'HrSetupCandicateView',
+    component:HrSetupCandicateView
+  },
+  {
+    path: '/setupquestion',
+    name:'SetupQuestion',
+    component:SetupQuestion
+  },
+  {
+    path: '/questionset',
+    name:'QuestionSet',
+    component:QuestionSetMapping
+  },
+  {
+    path: '/questionforcandidate',
+    name:'SetupQustionForCandidates',
+    component:SetupQustionForCandidates
+  },
+  {
+    path: '/viewexamlist',
+    name:'ViewExamPaperList',
+    component:ViewExamPaperList
+  },
+  {
+    path: '/viewexam',
+    name:'ViewExamPaper',
+    component:ViewExamPaper
+  },
+  {
+    path: '/resultsheet',
+    name:'ResultSheet',
+    component:ResultSheet
+  },
+
 ]
 
 

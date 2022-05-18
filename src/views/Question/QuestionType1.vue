@@ -5,9 +5,9 @@
         <span class="heading-text">Please ans this question</span>
         <div class="time-left">
             <h4>Time-Left: </h4>
-            <h4>28.28</h4>
+            <h4>30</h4>
             <div>
-                <h4>Mark: 10.212</h4>
+                <h4>Mark: 5</h4>
             </div>
         </div>
       <h4 class="question">
