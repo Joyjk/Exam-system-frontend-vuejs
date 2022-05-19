@@ -9,8 +9,8 @@
       <router-link to="/addcandidate2">New short Candidate</router-link> |
       <router-link to="/secondpage">Second Page</router-link> |
       <router-link to="/questiontype1">Question type 1</router-link> |
-      <router-link to="/questiontype2">Question type 2</router-link> | 
-      <router-link to="/questiontype3">Question type 3</router-link> |
+      <!-- <router-link to="/questiontype2">Question type 2</router-link> | 
+      <router-link to="/questiontype3">Question type 3</router-link> | -->
       <!-- Question type 4 -->
       <router-link to="/questiontype4">Questions</router-link> |
       <router-link to="/login">Login</router-link> |

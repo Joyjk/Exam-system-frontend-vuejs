@@ -4,18 +4,34 @@
    <h3>Welcome</h3>
    <h5>Please answer all the question given below</h5>
   <form-wizard @onComplete="onComplete">
-  
-   
-    <tab-content title="Question 1">
+<!--   
+   <pre>{{questionsData}}</pre> -->
+    <tab-content title="Question " v-for="index in questionsData.length, questionsData" v-bind:key="index">
+
+      <!-- <pre>{{index}}</pre> -->
+      <!-- title="Question 1" v-for="item in questionsData" v-bind:key="item.questionId" -->
+      <!-- <div v-for="item in questionsData" v-bind:key="item.questionId">
+          <h1>{{item.questionId}}</h1>
+          
+      </div> -->
+      
+        <Qus1  :questionsData1= {index} />
+
+
+
+    </tab-content>
+     
+
+    <!-- <tab-content title="Question 2">
       
 
         <Qus1 />
 
 
 
-    </tab-content>
+    </tab-content> -->
 
-    <tab-content title="Question 2">
+    <!-- <tab-content title="Question 2">
       
 
         <Qus2 />
@@ -31,7 +47,7 @@
 
 
 
-    </tab-content>
+    </tab-content> -->
 
 
   </form-wizard>
@@ -45,8 +61,8 @@ import "vue-step-wizard/dist/vue-step-wizard.css";
 // import { email } from "vuelidate/lib/validators";
 // import { numeric } from "vuelidate/lib/validators";
 import Qus1 from '../Question/QuestionType1.vue'
-import Qus2 from '../Question/QuestionType2.vue'
-import Qus3 from '../Question/QuestionType3.vue'
+// import Qus2 from '../Question/QuestionType2.vue'
+// import Qus3 from '../Question/QuestionType3.vue'
 
 import Vue from 'vue'
 import axios from 'axios'
@@ -59,12 +75,14 @@ export default {
     FormWizard,
     TabContent,
     Qus1,
-    Qus2,
-    Qus3,
+    // Qus2,
+    // Qus3,
   },
   mixins: [ValidationHelper],
   data() {
     return {
+       questionsData:undefined,
+       questionsDataArray:[],
       formData: {
         name: "",
         email: null,
@@ -83,6 +101,12 @@ export default {
         experienceYear:null
         // referral: null,
         // terms: false,
+      },
+      valueItem:{
+        id:'',
+        data:{
+
+        }
       },
       validationRules: [
         // { name: { required }, email: { required, email}, phone:{required, numeric} }, //required, numeric
@@ -123,5 +147,21 @@ export default {
 
     },
   },
+  mounted(){
+      Vue.axios.get("https://localhost:44332/api/Questions").then((resp)=>{
+            this.questionsData=JSON.parse(JSON.stringify( resp.data))
+            this.questionsDataArray.push((resp.data))
+             console.warn(JSON.parse(JSON.stringify( resp.data)))
+        })
+
+
+        for (let index = 1; index <= this.questionsData.length; index++) {
+          this.valueItem.id=index;
+          this.valueItem.data=this.questionsData[index]
+          
+        }
+        console.warn(this.valueItem)
+  }
+
 };
 </script>

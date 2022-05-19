@@ -1,5 +1,7 @@
 <template>
-  <div>
+<div>
+  <div >
+
     <div class="">
         <!-- <h3>This is Question type 1</h3>
         <span class="heading-text">Please ans this question</span> -->
@@ -10,26 +12,29 @@
                 <h4>Mark: 5</h4>
             </div>
         </div>
+        
       <h4 class="question">
        Q1: This is a long paragraph written to show how the line-height of an
         element is affected by our utilities. Classes are applied to the element
         itself or sometimes the parent element?
+        <!-- {{item.question}} -->
       </h4>
     </div>
+    <div>
+         <img src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" height="400" alt=""> 
+    </div>
+    <div>
+        <ul>
+            <li v-for="item in questionsData1" v-bind:key="item.questionId">
+                {{item.question}} ---- {{item.questionType}}---{{item.mark}}----{{item.option1}}
+                
+                </li>
+        </ul>
+    </div>
     <div class="ansButton">
-        <!-- <button class="btn btn-primary" type="radio">
-            a)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.
-        </button>
-
-        <input type="radio" class="btn btn-primary" value="a)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.">
-        
-        <button class="btn btn-primary">
-            b)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.
-        </button> -->
             
+            <textarea rows="13" cols="80"> </textarea>
+
          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
         <label class="btn btn-outline-primary" for="btnradio1">a)This is a long paragraph written to show how the line-height of an
         element is affected by our utilities.</label>
@@ -70,9 +75,31 @@
         
     </div>
   </div>
+  </div>
 </template>
 <script>
-export default {};
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios' 
+Vue.use(VueAxios, axios)
+export default {
+
+    props:['questionsData1'],
+
+    data(){
+        return{
+           // questionsData:undefined
+        }
+    },
+     mounted() {
+        // Vue.axios.get("https://localhost:44332/api/Questions").then((resp)=>{
+        //     this.questionsData=resp.data
+        //      //console.warn(resp.data)
+        // })
+
+        //console.warn(this.questionsData)
+    },
+};
 </script>
 
 <style scoped>
