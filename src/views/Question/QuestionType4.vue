@@ -15,7 +15,7 @@
           
       </div> -->
       
-        <Qus1  :questionsData1= {index} />
+        <Qus1  :questionsData1= {index} :getData=getAllData />
 
 
 
@@ -160,7 +160,7 @@ export default {
           this.valueItem.data=this.questionsData[index]
           
         }
-        console.warn(this.valueItem)
+       // console.warn(this.valueItem)
   }
 
 };

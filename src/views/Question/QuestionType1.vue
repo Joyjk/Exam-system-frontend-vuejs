@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div >
+  <div  v-for="item in questionsData1" v-bind:key="item.questionId">
 
     <div class="">
         <!-- <h3>This is Question type 1</h3>
@@ -9,55 +9,76 @@
             <h4>Time-Left: </h4>
             <h4>30</h4>
             <div>
-                <h4>Mark: 5</h4>
+                <h4>Mark: {{item.mark}}</h4>
             </div>
         </div>
         
       <h4 class="question">
-       Q1: This is a long paragraph written to show how the line-height of an
+       <!-- Q1: This is a long paragraph written to show how the line-height of an
         element is affected by our utilities. Classes are applied to the element
-        itself or sometimes the parent element?
-        <!-- {{item.question}} -->
+        itself or sometimes the parent element? -->
+        {{item.question}}
       </h4>
     </div>
-    <div>
+    <div v-if="item.questionPicture==='null'">
          <img src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" height="400" alt=""> 
     </div>
-    <div>
+    <!-- <div>
         <ul>
             <li v-for="item in questionsData1" v-bind:key="item.questionId">
                 {{item.question}} ---- {{item.questionType}}---{{item.mark}}----{{item.option1}}
                 
                 </li>
         </ul>
-    </div>
+    </div> -->
     <div class="ansButton">
             
+            <div  v-if="item.questionType==='written'">
             <textarea rows="13" cols="80"> </textarea>
+            </div>
 
-         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
-        <label class="btn btn-outline-primary" for="btnradio1">a)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.</label>
+        <div  v-if="item.questionType==='mcq'">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+                <label class="btn btn-outline-primary" for="btnradio1">{{item.option1}}</label>
+        </div>
+       
 
        
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" >
+        <!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" >
         <label class="btn btn-outline-primary" for="btnradio2">b)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.</label>
+        element is affected by our utilities.</label> -->
 
+        <div  v-if="item.questionType==='mcq'">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio2">{{item.option2}}</label>
+        </div>
         
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" >
+        <!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" >
         <label class="btn btn-outline-primary" for="btnradio3">c)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.</label>
+        element is affected by our utilities.</label> -->
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" >
+        <div  v-if="item.questionType==='mcq'">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio3">{{item.option3}}</label>
+        </div>
+        <!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" >
         <label class="btn btn-outline-primary" for="btnradio4">d)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.</label>
+        element is affected by our utilities.</label> -->
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" >
+        <div  v-if="item.questionType==='mcq'">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio4">{{item.option4}}</label>
+        </div>
+        <!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" >
         <label class="btn btn-outline-primary" for="btnradio5">e)This is a long paragraph written to show how the line-height of an
-        element is affected by our utilities.</label>
+        element is affected by our utilities.</label> -->
+
+        <div  v-if="item.questionType==='mcq'">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" >
+        <label class="btn btn-outline-primary" for="btnradio5">{{item.option5}}</label>
+        </div>
 
         <!-- <button class="btn btn-primary">
             c)This is a long paragraph written to show how the line-height of an
@@ -84,7 +105,13 @@ import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
 export default {
 
-    props:['questionsData1'],
+    //  props:['questionsData1','getData:Function'],
+     props:{
+         questionsData1:Object,
+         getData:Function
+     },
+    
+
 
     data(){
         return{

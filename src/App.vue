@@ -5,7 +5,7 @@
       <!-- <router-link to="/about">About</router-link> | -->
       <!-- <router-link to="/page2">Page 2</router-link> | -->
       <router-link to="/addnewuser">New User</router-link> |
-      <!-- <router-link to="/addcandidate">New Candidate</router-link> | -->
+      <router-link to="/addcandidate">New Candidate</router-link> |
       <router-link to="/addcandidate2">New short Candidate</router-link> |
       <router-link to="/secondpage">Second Page</router-link> |
       <router-link to="/questiontype1">Question type 1</router-link> |
@@ -20,7 +20,10 @@
       <router-link to="/questionforcandidate">Question Assign to candidate</router-link> |
       <router-link to="/viewexamlist">View exam list</router-link> |
       <router-link to="/viewexam">View exam paper</router-link> |
-      <router-link to="/resultsheet">Result Sheet</router-link> 
+      <router-link to="/resultsheet">Result Sheet</router-link>  |
+      <!-- <router-link to="/questionnew">Question new try</router-link> -->
+      <router-link to="/tebtest">Tab Test</router-link>  |
+
       
     </nav>
     <router-view/>

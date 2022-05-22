@@ -18,6 +18,8 @@ import SetupQustionForCandidates from '../views/AdminView/SetupQustionForCandida
 import ViewExamPaperList from '../views/AdminView/ViewExamPaperList.vue'
 import ViewExamPaper from '../views/AdminView/ViewExamPaper.vue'
 import ResultSheet from '../views/AdminView/ResultSheet.vue'
+import QuestionNew from '../views/Question/QuestionNew.vue'
+import TabTest from '../views/TestTab/TabTest.vue'
 
 Vue.use(VueRouter)
 
@@ -119,6 +121,17 @@ const routes = [
     path: '/resultsheet',
     name:'ResultSheet',
     component:ResultSheet
+  },
+
+  {
+    path: '/questionnew',
+    name:'QuestionNew',
+    component:QuestionNew
+  },
+  {
+    path: '/tebtest',
+    name:'TabTest',
+    component:TabTest
   },
 
 ]
