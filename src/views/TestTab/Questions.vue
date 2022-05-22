@@ -7,7 +7,8 @@
         <span class="heading-text">Please ans this question</span> -->
         <div class="time-left">
             <h4>Time-Left: </h4>
-            <h4>28.28</h4>
+            <!-- <h4>{{timerCount }}</h4> -->
+            <h4>50.20 Min</h4>
             <div>
                 <h4>Mark: {{questionData.mark}}</h4>
             </div>
@@ -129,6 +130,7 @@ export default {
             option3:this.questionData.option3,
             option4:this.questionData.option4,
             option5:this.questionData.option5,
+            timerCount: 120,
 
         
        }
@@ -136,6 +138,7 @@ export default {
     methods:{
         addAnsSheet(e){
             e.preventDefault();
+
 
             var dataN = JSON.parse(JSON.stringify(this.form))
             console.log(dataN)
@@ -152,6 +155,24 @@ export default {
             })
            // this.updateTab(1);
         }
+    },
+    watch:{
+         timerCount: {
+                handler(value) {
+
+                    if (value > 0) {
+                        setTimeout(() => {
+                            this.timerCount--;
+                        }, 1000);
+                    }
+                    if(value==0)
+                    {
+                       // this.addAnsSheet();
+                    }
+
+                },
+                immediate: true // This ensures the watcher is triggered upon creation
+            }
     }
 };
 </script>

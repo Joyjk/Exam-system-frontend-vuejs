@@ -2,8 +2,8 @@
   <div>
     <!-- Tabs with card integration -->
     <b-card no-body>
-      <b-tabs v-model="tabIndex" small card>
-        <b-tab title="Question " v-for="item in  questionsData" v-bind:key="item.questionId">
+      <b-tabs v-model="tabIndex" small card >
+        <b-tab style="display:hidden; " title="Question " v-for="item in  questionsData" v-bind:key="item.questionId">
             <QuestionTab :questionData="item" :updateTab="updateTabIndex" /> 
              <!-- :updateTab="updateTabIndex" -->
         </b-tab>
@@ -69,6 +69,14 @@
 //   }
 </script>
 
+<style>
+#__BVID__22__BV_tab_controls_{
+  display: none;
+}
+.nav-item{
+  display: none;
+}
+</style>
 
 
 
@@ -138,6 +146,8 @@ export default {
     }
   },
   mounted(){
+    
+
       Vue.axios.get("https://localhost:44332/api/Questions").then((resp)=>{
             this.questionsData=JSON.parse(JSON.stringify(resp.data))
             this.questionsDataArray.push((resp.data))
