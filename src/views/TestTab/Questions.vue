@@ -24,13 +24,14 @@
         </div>
         <br>
     </div>
-    <div class="ansButton">
-
-        <div v-if="questionData.questionType==='written'">
+    <div v-if="questionData.questionType==='written'">
         <textarea rows="13" v-model="form.givenAns" cols="80"> </textarea>
         <br>
         <br>
         </div>
+    <div class="ansButton">
+
+        
         
 
 <!-- 
@@ -168,6 +169,7 @@ export default {
     background-color: rgb(131, 23, 23);
     color: aliceblue;
     width: 10%;
+    margin-top: 5%;
     margin-left: 30%;
     display: inline-block;
     border-radius: 3em;
