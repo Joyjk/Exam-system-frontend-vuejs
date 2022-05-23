@@ -20,6 +20,9 @@ import ViewExamPaper from '../views/AdminView/ViewExamPaper.vue'
 import ResultSheet from '../views/AdminView/ResultSheet.vue'
 import QuestionNew from '../views/Question/QuestionNew.vue'
 import TabTest from '../views/TestTab/TabTest.vue'
+import AddQuestionSetName from '../views/AdminView/AddQuestionSetName.vue'
+import AddCandidateType from '../views/AdminView/AddCandidateType.vue'
+import AddCandidateSession from '../views/AdminView/AddCandidateSession.vue'
 
 Vue.use(VueRouter)
 
@@ -132,6 +135,21 @@ const routes = [
     path: '/tebtest',
     name:'TabTest',
     component:TabTest
+  },
+  {
+    path: '/addsetname',
+    name:'AddQuestionSetName',
+    component:AddQuestionSetName
+  },
+  {
+    path: '/addcandidatetype',
+    name:'AddCandidateType',
+    component:AddCandidateType
+  },
+  {
+    path: '/addcandidatesession',
+    name:'AddCandidateSession',
+    component:AddCandidateSession
   },
 
 ]
