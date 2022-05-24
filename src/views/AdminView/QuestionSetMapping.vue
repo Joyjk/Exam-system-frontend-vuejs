@@ -180,7 +180,7 @@ export default {
 
     }, 
     methods:{
-        addMappingQusSet(e){
+        async addMappingQusSet(e){
             e.preventDefault();
             //this.form.questionId = this.form.questionId[1]
             var data = this.form.questionId.length;
@@ -200,10 +200,26 @@ export default {
                 questions.push(this.form.questionId[i])
             }
 
-            for(let i=0;i<questions.length;i++)
+            for(var i=0;i<questions.length;i++)
             {
                 form2.questionId=questions[i];
-                console.log(form2)
+                //console.log(form2)
+
+            await axios.post('https://localhost:44332/api/Questions/SetAndQuestionsMapping', form2)
+                .then((res)=>{
+                //console.log(res.status)
+                if(res.status===201)
+                {
+                    console.log("Success")
+                    
+                    //this.updateTab(1);
+                    //window.location.reload();
+                }
+                })
+
+               
+
+
             }
 
             
